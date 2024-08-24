@@ -1,0 +1,175 @@
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1280px){
+    .header{
+        margin: 40px 90px;
+    }
+
+    .sections{
+        margin: 40px 90px;
+        .cta{
+            .content{
+                h3{
+                    font-size: 44px;
+                }
+                 h2{
+                    font-size: 60px;
+                 }
+            }
+        }
+
+        .about{
+            .content{
+                .left{
+                    .about-me{
+                        .left-line{
+                            height: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer{
+        padding: 80px 90px;
+        gap: 32px;
+        img{
+            width: 474px;
+            height: 452px;
+        }
+        .content{
+            .informations{
+                h1{
+                    font-size: 92px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 428px){    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 24px;
+    }
+    .sections{
+        margin: 40px 24px;
+        .cta{
+            .content{
+                padding: 30px 24px;
+                h3{
+                    font-size: 22px;
+                }
+                h2{
+                    font-size: 32px;
+                    width: 279px;
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .last-projects{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            h1{
+                font-size: 56px;
+            }
+            .projects{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        .projects-navgation{
+            display: flex;
+            align-items: center;
+            p{
+                display: flex;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            #arrow-1{
+                display: none;
+            }
+        }
+        .about{
+            h1{
+                font-size: 56px;
+            }
+            .content{
+                display: flex;
+                flex-direction: column-reverse;
+                .left{
+                    .about-me{
+                        display: flex;
+                        align-items: center;
+                        .left-line{
+                            width: 10px;
+                            height: 170px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .my-skills{
+                        h2{
+                            font-size: 36px;
+                        }
+                        .skills{
+                            .skill{
+                                img{
+                                    width: 110px;
+                                    height: 110px;
+                                }
+                                h4{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right{
+                    img{
+                        width: 222px;
+                        height: 222px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        padding: 50px 24px;
+        .content{
+            .informations{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1{
+                    font-size: 56px;
+                    width: 327px;
+                }
+                h4{
+                    font-size: 24px;
+                }
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}

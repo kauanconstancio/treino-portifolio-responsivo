@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 180px;
+
+    img{
+        width: 164px;
+        height: 34px;
+        cursor: pointer;
+    }
+
+    i{
+       font-size: 42px;
+       cursor: pointer;
+    }
+}

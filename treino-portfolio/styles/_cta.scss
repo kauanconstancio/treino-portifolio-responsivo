@@ -1,0 +1,61 @@
+.cta{
+    border-radius: 44px;
+    background-image: linear-gradient(90deg, #FBED96, #ABECD6);
+    box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.35);
+
+    .content{
+        padding: 38px 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+
+        img{
+            width: 150px;
+            height: 150px;
+            margin-bottom: -30px;
+        }
+        
+        h3{
+            font-family: 'Nunito';
+            font-size: 44px;
+            font-weight: 500;
+        }
+
+        h2{
+            font-size: 80px;
+            font-weight: 500;
+            line-height: 131%;
+            width: 1040px;
+
+            span{
+                color: #189FFF;
+            }
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            font-size: 20px;
+
+            #contact{
+                background-color: #000;
+                color: #fff;
+                padding: 8px 36px;
+                border-radius: 32px;
+            }
+
+            #cv{
+                a{
+                    font-weight: 600;
+                    i{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

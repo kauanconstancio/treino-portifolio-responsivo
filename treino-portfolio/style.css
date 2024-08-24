@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  animation: fadeInAnimation ease 2s;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 40px 180px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 180px;
+}
+.header img {
+  width: 164px;
+  height: 34px;
+  cursor: pointer;
+}
+.header i {
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.cta {
+  border-radius: 44px;
+  background-image: linear-gradient(90deg, #FBED96, #ABECD6);
+  box-shadow: 5px 8px 25px rgba(0, 0, 0, 0.35);
+}
+.cta .content {
+  padding: 38px 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.cta .content img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: -30px;
+}
+.cta .content h3 {
+  font-family: "Nunito";
+  font-size: 44px;
+  font-weight: 500;
+}
+.cta .content h2 {
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 131%;
+  width: 1040px;
+}
+.cta .content h2 span {
+  color: #189FFF;
+}
+.cta .content .buttons {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: 20px;
+}
+.cta .content .buttons #contact {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 36px;
+  border-radius: 32px;
+}
+.cta .content .buttons #cv a {
+  font-weight: 600;
+}
+.cta .content .buttons #cv a i {
+  font-size: 16px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about h1 {
+  font-size: 92px;
+  font-weight: 500;
+  line-height: 105%;
+}
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .content .left {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.about .content .left .about-me {
+  display: flex;
+  gap: 10px;
+}
+.about .content .left .about-me .left-line {
+  width: 10px;
+  height: 180px;
+  border-radius: 999px;
+  background-color: #000;
+}
+.about .content .left .about-me p {
+  font-size: 24px;
+}
+.about .content .left .my-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about .content .left .my-skills h2 {
+  font-size: 52px;
+  font-weight: 500;
+}
+.about .content .left .my-skills .skills {
+  display: flex;
+  gap: 20px;
+}
+.about .content .left .my-skills .skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .content .left .my-skills .skills .skill img {
+  width: 148px;
+  height: 148px;
+}
+.about .content .left .my-skills .skills .skill h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.about .content .right img {
+  width: 585px;
+  height: 684px;
+}
+
+.last-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.last-projects h1 {
+  font-size: 92px;
+  width: 200px;
+  line-height: 105%;
+  font-weight: 500;
+}
+.last-projects .projects {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.last-projects .projects .project {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.last-projects .projects .project h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.last-projects .projects .project .techs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.last-projects .projects .project .techs p {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 32px;
+}
+.last-projects .projects .project .project-img img {
+  padding: 34px 0px;
+  background-color: #e23839;
+  border-radius: 18px;
+}
+.last-projects .projects .project .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.last-projects .projects .project .links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.last-projects .projects .project .links a i {
+  font-size: 30px;
+}
+
+.projects-navgation {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+.projects-navgation p {
+  display: none;
+}
+.projects-navgation a {
+  font-size: 40px;
+  background-color: #f59e0b;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  background-color: #111827;
+  width: 100%;
+  padding: 80px 180px;
+  border-radius: 48px 48px 0px 0px;
+}
+.footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  color: #fff;
+}
+.footer .content .informations h1 {
+  font-size: 118px;
+  font-weight: 500;
+  width: 780px;
+  line-height: 105%;
+}
+.footer .content .informations h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.footer .content .contact a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.footer .content .social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer .content .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 50px;
+}
+.footer .content .social #twitter {
+  color: #55ACEE;
+}
+.footer .content .social #linkedin {
+  color: #fff;
+  background-color: #55ACEE;
+}
+.footer img {
+  width: 674px;
+  height: 652px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1280px) {
+  .header {
+    margin: 40px 90px;
+  }
+  .sections {
+    margin: 40px 90px;
+  }
+  .sections .cta .content h3 {
+    font-size: 44px;
+  }
+  .sections .cta .content h2 {
+    font-size: 60px;
+  }
+  .sections .about .content .left .about-me .left-line {
+    height: 260px;
+  }
+  .footer {
+    padding: 80px 90px;
+    gap: 32px;
+  }
+  .footer img {
+    width: 474px;
+    height: 452px;
+  }
+  .footer .content .informations h1 {
+    font-size: 92px;
+  }
+}
+@media (max-width: 428px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 24px;
+  }
+  .sections {
+    margin: 40px 24px;
+  }
+  .sections .cta .content {
+    padding: 30px 24px;
+  }
+  .sections .cta .content h3 {
+    font-size: 22px;
+  }
+  .sections .cta .content h2 {
+    font-size: 32px;
+    width: 279px;
+  }
+  .sections .cta .content .buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+  }
+  .sections .last-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .sections .last-projects h1 {
+    font-size: 56px;
+  }
+  .sections .last-projects .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sections .projects-navgation {
+    display: flex;
+    align-items: center;
+  }
+  .sections .projects-navgation p {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .sections .projects-navgation #arrow-1 {
+    display: none;
+  }
+  .sections .about h1 {
+    font-size: 56px;
+  }
+  .sections .about .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sections .about .content .left .about-me {
+    display: flex;
+    align-items: center;
+  }
+  .sections .about .content .left .about-me .left-line {
+    width: 10px;
+    height: 170px;
+  }
+  .sections .about .content .left .about-me p {
+    font-size: 16px;
+  }
+  .sections .about .content .left .my-skills h2 {
+    font-size: 36px;
+  }
+  .sections .about .content .left .my-skills .skills .skill img {
+    width: 110px;
+    height: 110px;
+  }
+  .sections .about .content .left .my-skills .skills .skill h4 {
+    font-size: 16px;
+  }
+  .sections .about .content .right img {
+    width: 222px;
+    height: 222px;
+  }
+  .footer {
+    padding: 50px 24px;
+  }
+  .footer .content .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .content .informations h1 {
+    font-size: 56px;
+    width: 327px;
+  }
+  .footer .content .informations h4 {
+    font-size: 24px;
+  }
+  .footer img {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

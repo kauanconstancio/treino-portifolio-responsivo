@@ -1,0 +1,78 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h1{
+        font-size: 92px;
+        font-weight: 500;
+        line-height: 105%;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            .about-me{
+                display: flex;
+                gap: 10px;
+
+                .left-line{
+                    width: 10px;
+                    height: 180px;
+                    border-radius: 999px;
+                    background-color: #000;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+            
+            .my-skills{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                h2{
+                    font-size: 52px;
+                    font-weight: 500;
+                }
+
+                .skills{
+                    display: flex;
+                    gap: 20px;
+
+                    .skill{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        img{
+                            width: 148px;
+                            height: 148px;
+                        }
+
+                        h4{
+                            font-size: 28px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .right{
+            img{
+                width: 585px;
+                height: 684px;
+            }
+        }
+
+    }
+}
